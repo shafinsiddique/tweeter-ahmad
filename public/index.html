@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <!-- Meta Information -->
     <title>Tweeter - Home Page</title>
 
@@ -9,21 +9,46 @@
 
     <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
 
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
-  </head>
 
-  <body>
+    <!-- Custom CSS -->
+    <style>
+        nav {
+            height: 120px; /* Set the height to 120 pixels */
+            background-color: #4056A1; /* Set the background color to #4056A1 */
+            color: #FFFFFF; /* Set the font color to white */
+            font-family: 'Bungee', cursive; /* Set font-family to Bungee */
+            padding: 0 1.5em; /* Add 1.5ems of space on the right and left */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav span {
+            font-family: 'Bungee', cursive; /* Set font-family to Bungee */
+        }
+    </style>
+</head>
+<body>
     <!-- Top nav bar (fixed) -->
     <nav>
-      <span>tweeter</span>
+        <span>tweeter</span>
+        <span>Write a new tweet<i class="fas fa-angle-double-down"></i></span>
     </nav>
 
     <!-- Page-specific (main) content here -->
     <main class="container"></main>
-  </body>
+</body>
 </html>
