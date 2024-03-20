@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+preconnect[href^="https://fonts.gstatic.com"] {
+    crossorigin;
+}
+
+nav {
+  height: 120px; 
+  background-color: #4056A1; 
+  color: #FFFFFF; 
+  font-family: 'Bungee', cursive; 
+  padding: 0 1.5em; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav span {
+  font-family: 'Bungee', cursive; 
+}
