@@ -1,0 +1,23 @@
+.header {
+  height: 400px;
+  width: 100%;
+  background-color: #00a395; 
+  background-image: url("https://www.transparenttextures.com/patterns/always-grey.png"); 
+  background-size: cover; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+}
+
+.name {
+  margin-top: 20px;
+  text-align: center;
+}
