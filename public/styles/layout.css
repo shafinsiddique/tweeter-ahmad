@@ -16,10 +16,21 @@ html {
 
 body {
   color: #545149;
-  background-color: #f4f1ec;
+  background-color: #00a395; 
+  background-image: url("https://www.transparenttextures.com/patterns/3px-tile.png");
+  background-size: contain; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
   font-size: 24px;
 }
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+
+ main {
+  width: 90%;
+  margin: 0 auto; /* Center align */
+  background-color: inherit; /* Same as body */
+}
