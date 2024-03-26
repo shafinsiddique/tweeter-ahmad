@@ -25,24 +25,36 @@
     </style>
 </head>
 <body>
-    <!-- Top nav bar (fixed) -->
-    <nav>
-        <span>tweeter</span>
-        <span>Write a new tweet<i class="fas fa-angle-double-down"></i></span>
-    </nav>
+  <!-- Top nav bar (fixed) -->
+  <nav>
+      <span>tweeter</span>
+      <span>Write a new tweet<i class="fas fa-angle-double-down"></i></span>
+  </nav>
 
-    <header>
-      <link rel="stylesheet" href="/styles/header.css" type="text/css"/>
-      <div>
-          <img src="/images/profile-hex.png"> 
-      </div>
-      <br>
-      <div>
-          <h2>Ahmad Ameen</h2>
-      </div>
-  </header>
+  <header>
+    <link rel="stylesheet" href="/styles/header.css" type="text/css"/>
+    <div>
+        <img src="/images/profile-hex.png"> 
+    </div>
+    <br>
+    <div>
+        <h2>Ahmad Ameen</h2>
+    </div>
+</header>
 
-    <!-- Page-specific (main) content here -->
-    <main class="container"></main>
+  <main class="container">
+    <section class="new-tweet">
+      <h2>Compose Tweet</h2>
+      <form>
+        <label for="tweet-text">What are you humming about?</label>
+        <textarea name="text" id="tweet-text"></textarea>
+        <div>
+          <button type="submit">Tweet</button>
+          <output name="counter" class="counter" for="tweet-text">140</output>
+        </div>
+      </form>
+    </section>
+  </main>
+  
 </body>
 </html>
