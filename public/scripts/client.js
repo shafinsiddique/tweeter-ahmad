@@ -24,7 +24,6 @@ $(document).ready(function() {
       return $tweet; 
   };
 
-
   const renderTweets = function(tweets) {
       for (const tweet of tweets) {
           const $tweetElement = createTweetElement(tweet);
@@ -47,4 +46,28 @@ $(document).ready(function() {
   };
 
   loadTweets();
+
+  $('form').submit(function(event) {
+      event.preventDefault();
+
+      const tweetContent = $(this).find('textarea').val().trim();
+
+      if (!tweetContent) {
+          alert('Error: Tweet content cannot be empty.'); 
+      } else if (tweetContent.length > 140) {
+          alert('Error: Tweet content exceeds the maximum length of 140 characters.'); 
+      } else {
+          $.ajax({
+              url: '/tweets',
+              method: 'POST',
+              data: $(this).serialize(), 
+              success: function(response) {
+                  console.log('Tweet successfully posted:', response);
+              },
+              error: function(xhr, status, error) {
+                  console.error('Error posting tweet:', error);
+              }
+          });
+      }
+  });
 });
