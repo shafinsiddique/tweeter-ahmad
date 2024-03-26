@@ -1,19 +1,17 @@
 $(document).ready(function() {
   $('.new-tweet textarea').on('input', function() {
-      let textarea = this;
-      let inputValue = textarea.value;
+      let $textarea = $(this);
+      let inputValue = $textarea.val();
       let inputLength = inputValue.length;
       let charactersLeft = 140 - inputLength;
 
-      console.log('Characters left:', charactersLeft);
-
-      let counter = $('.new-tweet .counter');
-      counter.text(charactersLeft);
+      let $counter = $('.new-tweet .counter');
+      $counter.text(charactersLeft);
 
       if (charactersLeft < 0) {
-          counter.addClass('invalid'); 
+          $counter.addClass('invalid'); 
       } else {
-          counter.removeClass('invalid'); 
+          $counter.removeClass('invalid'); 
       }
   });
 });
