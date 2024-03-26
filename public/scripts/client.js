@@ -62,16 +62,20 @@ $(document).ready(function() {
     event.preventDefault();
     const formData = $(this).serialize();
 
-    $.ajax({
-        url: '/tweets', 
-        method: 'POST',
-        data: formData, 
-        success: function(response) {
-            console.log('Tweet successfully posted:', response);
-        },
-        error: function(xhr, status, error) {
-            console.error('Error posting tweet:', error);
-        }
-    });
+    const loadTweets = function() {
+      $.ajax({
+          url: 'http://localhost:8080/tweets',
+          method: 'GET',
+          dataType: 'json', 
+          success: function(tweets) {
+              console.log('Tweets loaded successfully:', tweets);
+          },
+          error: function(xhr, status, error) {
+              console.error('Error loading tweets:', error);
+          }
+      });
+  };
+
+  loadTweets();
 });
 });
