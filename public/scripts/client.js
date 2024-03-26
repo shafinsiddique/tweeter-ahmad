@@ -59,6 +59,19 @@ $(document).ready(function() {
   renderTweets(data);
 
   $('form').submit(function(event) {
-      event.preventDefault();
-  });
+    event.preventDefault();
+    const formData = $(this).serialize();
+
+    $.ajax({
+        url: '/tweets', 
+        method: 'POST',
+        data: formData, 
+        success: function(response) {
+            console.log('Tweet successfully posted:', response);
+        },
+        error: function(xhr, status, error) {
+            console.error('Error posting tweet:', error);
+        }
+    });
+});
 });
