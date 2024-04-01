@@ -1,52 +1,62 @@
-.tweet {
-  border: 1px solid #ccc;
+#tweets-container.tweets-container {
+  width: 90%;
+  display:flex;
+  background-color:#f4f1ec;
+  font-family: sans-serif;
+  flex-direction: column;
+  color:#333;
+}
+
+#tweets-container.tweets-container .tweet {
+  border: 1px solid #333;
   border-radius: 8px;
   padding: 20px;
   margin-bottom: 20px;
 }
 
-.tweet header img {
+#tweets-container.tweets-container .tweet header img {
   width: 50px;
   height: 50px;
   border-radius: 50%;
   margin-right: 10px;
 }
 
-.tweet header h3 {
+#tweets-container.tweets-container .tweet header h3 {
   margin: 0;
   font-size: 18px;
 }
 
-.tweet header p {
+#tweets-container.tweets-container .tweet header p {
   margin: 5px 0 0;
   color: #888;
   font-size: 14px;
 }
 
-.tweet-content p {
+#tweets-container.tweets-container .tweet-content p {
   margin-top: 10px;
+  color: #888;
 }
 
 
-.tweet footer {
+#tweets-container.tweets-container .tweet footer {
   margin-top: 10px;
 }
 
-.tweet footer .icon {
+#tweets-container.tweets-container .tweet footer .icon {
   margin-right: 10px;
   cursor: pointer;
   color: #888;
 }
 
-.tweet footer .icon:hover {
-  color: #ff4500; 
+#tweets-container.tweets-container .tweet footer .icon:hover {
+  color:#4056A1; 
 }
 
-.tweet:hover {
+#tweets-container.tweets-container .tweet:hover {
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
-.tweet footer .icon:hover {
+#tweets-container.tweets-container .tweet footer .icon:hover {
   color: #ff4500;
 }
 
