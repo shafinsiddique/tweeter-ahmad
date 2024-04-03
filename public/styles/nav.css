@@ -17,6 +17,11 @@ nav {
   z-index: 1000; 
 }
 
+nav .fas.fa-angle-double-down {
+  margin-left: 10px; 
+  color:crimson;
+}
+
 nav span {
   font-family: 'Bungee', cursive; 
 }

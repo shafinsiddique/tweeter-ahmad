@@ -1,62 +1,68 @@
-#tweets-container.tweets-container {
+#tweets-container {
   width: 90%;
   display:flex;
   background-color:#f4f1ec;
   font-family: sans-serif;
   flex-direction: column;
-  color:#333;
 }
 
-#tweets-container.tweets-container .tweet {
+.tweet {
+  width: 90%;
+  display: flex;
+  background-color: #f4f1ec;
+  font-family: sans-serif;
+  flex-direction: column;
+  color: #333;
   border: 1px solid #333;
   border-radius: 8px;
   padding: 20px;
   margin-bottom: 20px;
 }
 
-#tweets-container.tweets-container .tweet header img {
+.tweet header img {
   width: 50px;
   height: 50px;
   border-radius: 50%;
   margin-right: 10px;
 }
 
-#tweets-container.tweets-container .tweet header h3 {
+.tweet header h3 {
   margin: 0;
   font-size: 18px;
 }
 
-#tweets-container.tweets-container .tweet header p {
+.tweet header p {
   margin: 5px 0 0;
   color: #888;
   font-size: 14px;
 }
 
-#tweets-container.tweets-container .tweet-content p {
+.tweet p {
   margin-top: 10px;
   color: #888;
 }
 
 
-#tweets-container.tweets-container .tweet footer {
+.tweet footer {
   margin-top: 10px;
 }
 
-#tweets-container.tweets-container .tweet footer .icon {
+.tweet footer .tweet-response .icon {
   margin-right: 10px;
   cursor: pointer;
   color: #888;
 }
 
-#tweets-container.tweets-container .tweet footer .icon:hover {
-  color:#4056A1; 
+.tweet footer .tweet-response .icon:hover {
+  color: #4056A1;
 }
 
-#tweets-container.tweets-container .tweet:hover {
+
+.tweet:hover {
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
-#tweets-container.tweets-container .tweet footer .icon:hover {
+.tweet footer .icon:hover {
   color: #ff4500;
 }
 

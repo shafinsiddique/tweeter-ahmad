@@ -32,3 +32,8 @@ body {
   margin: 0 auto; 
   background-color: inherit; 
 }
+
+.name h2 {
+  font-family: Arial, sans-serif; 
+  color: white;
+}
