@@ -2,7 +2,7 @@ $(document).ready(function() {
 
   const loadTweets = function() {
     $.ajax({
-      url: '/tweets', 
+      url: 'http://localhost:8080/tweets', 
       method: 'GET',
       dataType: 'json',
       success: function(tweets) {
@@ -16,10 +16,12 @@ $(document).ready(function() {
   
 
   const renderTweets = function(tweets) {
-    $('.tweets-container').empty(); 
+    $('#tweets-container').empty(); 
+  
     for (let tweet of tweets) {
       const $tweet = createTweetElement(tweet);
-      $('.tweets-container').append($tweet); 
+      console.log($tweet)
+      $('#tweets-container').append($tweet); 
     }
   };
 
